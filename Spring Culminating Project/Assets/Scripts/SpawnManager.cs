@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomCar()
     {
         int carIndex = Random.Range(0, carPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 2, spawnPosZ);
         Instantiate(carPrefabs[carIndex], spawnPos, carPrefabs[carIndex].transform.rotation);
 
     }
