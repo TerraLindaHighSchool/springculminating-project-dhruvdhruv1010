@@ -893,7 +893,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039095551}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4453058, y: 1.6738427, z: 1}
@@ -1531,6 +1531,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 915435426, guid: 08851bcb94c855740b6f069cfc9d470e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3979577158046223769, guid: 08851bcb94c855740b6f069cfc9d470e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1660,6 +1664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5165758633658711815, guid: a440b30d01ab8a547b23fbd374a0af15,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5542547152820227780, guid: a440b30d01ab8a547b23fbd374a0af15,
         type: 3}
       propertyPath: m_Enabled
@@ -1737,6 +1746,11 @@ PrefabInstance:
     - target: {fileID: 9188124017737082268, guid: 168dfc594aeadf240beb05b681cdcbf0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188124018254919881, guid: 168dfc594aeadf240beb05b681cdcbf0,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
