@@ -912,7 +912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 19
-  xRange: 23
+  xRange: 20
   projectilePrefab: {fileID: 0}
 --- !u!65 &1039095553
 BoxCollider:
