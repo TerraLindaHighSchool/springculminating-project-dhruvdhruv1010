@@ -1526,6 +1526,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5509079457581038566, guid: 08851bcb94c855740b6f069cfc9d470e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3979577158046223769, guid: 08851bcb94c855740b6f069cfc9d470e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1655,6 +1660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5542547152820227780, guid: a440b30d01ab8a547b23fbd374a0af15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a440b30d01ab8a547b23fbd374a0af15, type: 3}
 --- !u!1001 &9188124018254919879
@@ -1664,6 +1674,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5952485757809383669, guid: 168dfc594aeadf240beb05b681cdcbf0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9188124017737082256, guid: 168dfc594aeadf240beb05b681cdcbf0,
         type: 3}
       propertyPath: m_Name
