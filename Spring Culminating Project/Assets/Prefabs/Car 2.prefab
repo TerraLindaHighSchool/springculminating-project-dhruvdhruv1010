@@ -107,11 +107,9 @@ GameObject:
   - component: {fileID: 9188124017737082269}
   - component: {fileID: 9188124017737082270}
   - component: {fileID: 9188124017737082271}
-  - component: {fileID: 9188124017737082267}
-  - component: {fileID: -5952485757809383669}
   - component: {fileID: 9188124018254919882}
   - component: {fileID: 9188124018254919881}
-  - component: {fileID: 9188124018254919888}
+  - component: {fileID: 964205013}
   m_Layer: 0
   m_Name: Car 2
   m_TagString: Untagged
@@ -128,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 9188124017737082256}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -13.4, y: 2, z: 59}
-  m_LocalScale: {x: 200, y: 200, z: 200}
+  m_LocalScale: {x: 200.00012, y: 200, z: 200.00012}
   m_Children:
   - {fileID: 9188124017682088178}
   - {fileID: 9188124017800274188}
@@ -199,31 +197,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: d857dc8da4a0e2b4088a55b525d92cc8, type: 3}
---- !u!114 &9188124017737082267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9188124017737082256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5210379be1e59c04a9ad313427bef6f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
---- !u!114 &-5952485757809383669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9188124017737082256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2252033d28dea4fba2ca6909ca1ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &9188124018254919882
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -248,23 +221,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9188124017737082256}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.052652214, y: 0.013264355, z: 0.020943196}
   m_Center: {x: 0.000042407784, y: 0.000832587, z: -4.656614e-10}
---- !u!114 &9188124018254919888
+--- !u!114 &964205013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9188124017737082256}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2252033d28dea4fba2ca6909ca1ca2, type: 3}
+  m_Script: {fileID: 11500000, guid: a8b451ca8f1750d4b97a2422e3cc5330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 29
 --- !u!1 &9188124017800274189
 GameObject:
   m_ObjectHideFlags: 0

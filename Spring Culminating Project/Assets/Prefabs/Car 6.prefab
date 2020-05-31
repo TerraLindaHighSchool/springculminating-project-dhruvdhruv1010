@@ -106,11 +106,9 @@ GameObject:
   - component: {fileID: 3979577158046223770}
   - component: {fileID: 3979577158046223771}
   - component: {fileID: 3979577158046223772}
-  - component: {fileID: 3979577158046223773}
-  - component: {fileID: -5509079457581038566}
   - component: {fileID: 915435427}
   - component: {fileID: 915435426}
-  - component: {fileID: 915435433}
+  - component: {fileID: 3767918139552642507}
   m_Layer: 0
   m_Name: Car 6
   m_TagString: Untagged
@@ -127,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 3979577158046223774}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -4.7, y: 2, z: 59}
-  m_LocalScale: {x: 200, y: 200, z: 200}
+  m_LocalScale: {x: 200.00012, y: 200, z: 200.00012}
   m_Children:
   - {fileID: 3979577158615478957}
   - {fileID: 3979577159320216644}
@@ -198,31 +196,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
---- !u!114 &3979577158046223773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979577158046223774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5210379be1e59c04a9ad313427bef6f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 40
---- !u!114 &-5509079457581038566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979577158046223774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2252033d28dea4fba2ca6909ca1ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &915435427
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -247,23 +220,24 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3979577158046223774}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.045798227, y: 0.013064211, z: 0.021283582}
   m_Center: {x: 0, y: -6.9849193e-10, z: 0}
---- !u!114 &915435433
+--- !u!114 &3767918139552642507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3979577158046223774}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2252033d28dea4fba2ca6909ca1ca2, type: 3}
+  m_Script: {fileID: 11500000, guid: a8b451ca8f1750d4b97a2422e3cc5330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 29
 --- !u!1 &3979577158272265815
 GameObject:
   m_ObjectHideFlags: 0

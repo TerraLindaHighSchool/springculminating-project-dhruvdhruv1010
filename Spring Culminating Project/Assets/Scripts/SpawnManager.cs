@@ -25,15 +25,13 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomCarLeftSide()
     {
         int carIndex = Random.Range(0, carPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, 0), 2, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, -3), 2, spawnPosZ);
         Instantiate(carPrefabs[carIndex], spawnPos, carPrefabs[carIndex].transform.rotation);
-
     }
     void SpawnRandomCarRightSide()
     {
         int carIndex = Random.Range(0, carPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(0, spawnRangeX), 2, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(3, spawnRangeX), 2, spawnPosZ);
         Instantiate(carPrefabs[carIndex], spawnPos, carPrefabs[carIndex].transform.rotation);
-
     }
 }
