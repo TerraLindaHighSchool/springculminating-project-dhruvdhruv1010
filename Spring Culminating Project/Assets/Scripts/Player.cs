@@ -33,4 +33,9 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("hi");
+    }
 }

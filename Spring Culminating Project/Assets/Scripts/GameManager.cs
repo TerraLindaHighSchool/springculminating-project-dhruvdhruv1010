@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public GameObject[] carPrefabs;
@@ -9,18 +9,13 @@ public class GameManager : MonoBehaviour
     private float spawnPosZ = 55;
     private float startDelay = 2;
     private float spawnInterval = 0.5f;
-    public bool isGameActive;
     public TextMeshProUGUI gameOverText;
 
     // Start is called before the first frame update
     void Start()
     {
-        isGameActive = true;
-        if(isGameActive)
-        {
-            InvokeRepeating("SpawnRandomCarLeftSide", startDelay, spawnInterval);
-            InvokeRepeating("SpawnRandomCarRightSide", startDelay, spawnInterval);
-        }
+        InvokeRepeating("SpawnRandomCarLeftSide", startDelay, spawnInterval);
+        InvokeRepeating("SpawnRandomCarRightSide", startDelay, spawnInterval);
     }
 
     // Update is called once per frame
@@ -29,11 +24,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("hi");
-        isGameActive = false;
-    }
+   
 
     void SpawnRandomCarLeftSide()
     {
