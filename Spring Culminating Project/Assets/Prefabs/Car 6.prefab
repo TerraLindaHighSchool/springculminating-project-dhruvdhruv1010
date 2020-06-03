@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 4182791750842155333}
   - component: {fileID: 6188461542846513387}
   - component: {fileID: 7443155850378787018}
-  - component: {fileID: 915435431}
+  - component: {fileID: 2188576808820452875}
   m_Layer: 0
   m_Name: Car 6
   m_TagString: Untagged
@@ -413,7 +413,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.045798227, y: 0.013064211, z: 0.021283582}
   m_Center: {x: 0, y: -6.9849193e-10, z: 0}
---- !u!114 &915435431
+--- !u!114 &2188576808820452875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,10 +422,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7037399214010091241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8b451ca8f1750d4b97a2422e3cc5330, type: 3}
+  m_Script: {fileID: 11500000, guid: bf72d347fefb390418c6aae24b7393a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
+  carPrefabs: []
+  speed: 23
+  gameOverText: {fileID: 0}
 --- !u!1 &8372315961056576235
 GameObject:
   m_ObjectHideFlags: 0
