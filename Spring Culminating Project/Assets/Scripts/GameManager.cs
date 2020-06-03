@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public TextMeshProUGUI gameOverText;
-    private Button button;
-    public GameObject titleScreen;
+    //public TextMeshProUGUI gameOverText;
+    //public Button startButton;
+    //public GameObject titleScreen;
+    //public Cars Cs;
 
     // Start is called before the first frame update
     void Start()
     {
-        button = GetComponent<Button>();
-        button.onClick.AddListener(StartGame);
-        StartGame();
+        //startButton = GetComponent<Button>();
+        //startButton.onClick.AddListener(StartGame);
     }
 
     void StartGame()
     {
-        isGameActive = true;
-        
-        titleScreen.gameObject.SetActive(false);
+        //Cs.isGameActive = true;
+        //titleScreen.gameObject.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        isGameActive = false;
+        //Cs.isGameActive = false;
     }
     
 }

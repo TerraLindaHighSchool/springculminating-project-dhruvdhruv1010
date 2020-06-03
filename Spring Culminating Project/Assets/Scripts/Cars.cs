@@ -9,7 +9,7 @@ public class Cars : MonoBehaviour
     public GameObject[] carPrefabs;
     private float spawnRangeX = 21;
     private float spawnPosZ = 55;
-    private float startDelay = 2;
+    private float startDelay = 1;
     private float spawnInterval = 0.7f;
     private float lowerBound = -15;
     public float speed = 40.0f;
@@ -19,6 +19,7 @@ public class Cars : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomCarLeftSide", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomCarRightSide", startDelay, spawnInterval);
+        isGameActive = true;
     }
 
     void StartGame()
@@ -43,6 +44,13 @@ public class Cars : MonoBehaviour
         transform.Translate(Vector3.right * Time.deltaTime * speed);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        isGameActive = false;
+        Debug.Log("h");
+        CancelInvoke("SpawnRandomCarLeftSide");
+        CancelInvoke("SpawnRandomCarRightSide");
+    }
     void SpawnRandomCarLeftSide()
     {
         if (isGameActive)

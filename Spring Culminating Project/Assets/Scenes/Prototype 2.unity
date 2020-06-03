@@ -855,10 +855,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d46a8e2c90c3e4b906cc9a76b8409a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefabs: []
-  isGameActive: 0
   gameOverText: {fileID: 511044232}
+  button: {fileID: 0}
   titleScreen: {fileID: 2058489278}
+  Cs: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf72d347fefb390418c6aae24b7393a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameActive: 0
+  carPrefabs: []
   speed: 40
 --- !u!4 &2035525918
 Transform:
@@ -2305,7 +2307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2058489279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2339,10 +2341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d46a8e2c90c3e4b906cc9a76b8409a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefabs: []
-  isGameActive: 0
   gameOverText: {fileID: 511044232}
+  button: {fileID: 493371269}
   titleScreen: {fileID: 2058489278}
+  Cs: {fileID: 0}
 --- !u!1001 &2069998115
 PrefabInstance:
   m_ObjectHideFlags: 0
