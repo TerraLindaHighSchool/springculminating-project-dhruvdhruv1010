@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 8115481728692893424}
   - component: {fileID: 2600280000933358884}
   - component: {fileID: 4891698545847090514}
-  - component: {fileID: 4973036149294782121}
+  - component: {fileID: 2672071177990216994}
   m_Layer: 0
   m_Name: Car 3
   m_TagString: Untagged
@@ -225,7 +225,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.045498963, y: 0.01358262, z: 0.021373877}
   m_Center: {x: -0.000103079736, y: 0.0009655473, z: 4.656614e-10}
---- !u!114 &4973036149294782121
+--- !u!114 &2672071177990216994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,9 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf72d347fefb390418c6aae24b7393a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carPrefabs: []
-  speed: 23
-  gameOverText: {fileID: 0}
+  speed: 40
 --- !u!1 &6170996186716401096
 GameObject:
   m_ObjectHideFlags: 0
