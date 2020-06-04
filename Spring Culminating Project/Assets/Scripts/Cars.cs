@@ -19,7 +19,7 @@ public class Cars : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomCarLeftSide", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomCarRightSide", startDelay, spawnInterval);
-        
+        isGameActive = true;
     }
 
     // Update is called once per frame
@@ -44,7 +44,6 @@ public class Cars : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
             endGame();
             
         }
@@ -54,27 +53,27 @@ public class Cars : MonoBehaviour
     {
         isGameActive = false;
         Debug.Log("h");
-        CancelInvoke("SpawnRandomCarLeftSide");
-        CancelInvoke("SpawnRandomCarRightSide");
+        //CancelInvoke("SpawnRandomCarLeftSide");
+        //CancelInvoke("SpawnRandomCarRightSide");
     }
     void SpawnRandomCarLeftSide()
     {
-        if (isGameActive)
-        {
+        //if (isGameActive)
+        //{
             int carIndex = Random.Range(0, carPrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, -2), 2, spawnPosZ);
             Instantiate(carPrefabs[carIndex], spawnPos, carPrefabs[carIndex].transform.rotation);
-        }
+        //}
     }
 
 
     void SpawnRandomCarRightSide()
     {
-        if (isGameActive)
-        {
+        //if (isGameActive)
+        //{
             int carIndex = Random.Range(0, carPrefabs.Length);
             Vector3 spawnPos = new Vector3(Random.Range(2, spawnRangeX), 2, spawnPosZ);
             Instantiate(carPrefabs[carIndex], spawnPos, carPrefabs[carIndex].transform.rotation);
-        }
+        //}
     }
 }
