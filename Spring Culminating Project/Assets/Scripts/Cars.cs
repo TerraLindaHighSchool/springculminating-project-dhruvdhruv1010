@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 public class Cars : MonoBehaviour
 {
-    public bool isGameActive;
+    public bool isGameActive = true;
     public GameObject[] carPrefabs;
     private float spawnRangeX = 21;
     private float spawnPosZ = 55;
@@ -19,13 +19,9 @@ public class Cars : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomCarLeftSide", startDelay, spawnInterval);
         InvokeRepeating("SpawnRandomCarRightSide", startDelay, spawnInterval);
-        isGameActive = true;
-    }
-
-    void StartGame()
-    {
         
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -46,6 +42,16 @@ public class Cars : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            endGame();
+            
+        }
+    }
+
+    void endGame()
+    {
         isGameActive = false;
         Debug.Log("h");
         CancelInvoke("SpawnRandomCarLeftSide");
@@ -60,6 +66,8 @@ public class Cars : MonoBehaviour
             Instantiate(carPrefabs[carIndex], spawnPos, carPrefabs[carIndex].transform.rotation);
         }
     }
+
+
     void SpawnRandomCarRightSide()
     {
         if (isGameActive)
