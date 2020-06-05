@@ -1872,15 +1872,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2035525916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf72d347fefb390418c6aae24b7393a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 50813c2a2586d654db5151cc4ae26df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGameActive: 0
   carPrefabs:
   - {fileID: 6292653768920783738, guid: 168dfc594aeadf240beb05b681cdcbf0, type: 3}
   - {fileID: 5637052600298364492, guid: a440b30d01ab8a547b23fbd374a0af15, type: 3}
   - {fileID: 7037399214010091241, guid: 08851bcb94c855740b6f069cfc9d470e, type: 3}
-  speed: 40
 --- !u!4 &2035525918
 Transform:
   m_ObjectHideFlags: 0
