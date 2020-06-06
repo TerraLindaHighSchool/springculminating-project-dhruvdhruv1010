@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnRangeX = 21;
     private float spawnPosZ = 55;
     private float startDelay = 1;
-    private float spawnInterval = 0.7f;
+    public float spawnInterval = 0.7f;
     void Start()
     {
         InvokeRepeating("SpawnRandomCarLeftSide", startDelay, spawnInterval);
