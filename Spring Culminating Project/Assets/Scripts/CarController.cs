@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class CarController : MonoBehaviour
 {
     private float lowerBound = -15;
@@ -45,5 +46,6 @@ public class CarController : MonoBehaviour
     {
         this.speed = 0;
         Time.timeScale = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

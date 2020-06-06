@@ -381,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400166, guid: fbbb7e0ccd296444f8f4cb972237bf3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.47
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 400166, guid: fbbb7e0ccd296444f8f4cb972237bf3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1978,7 +1978,7 @@ MonoBehaviour:
   - {fileID: 6292653768920783738, guid: 168dfc594aeadf240beb05b681cdcbf0, type: 3}
   - {fileID: 5637052600298364492, guid: a440b30d01ab8a547b23fbd374a0af15, type: 3}
   - {fileID: 7037399214010091241, guid: 08851bcb94c855740b6f069cfc9d470e, type: 3}
-  spawnInterval: 0.35
+  spawnInterval: 0.42
 --- !u!4 &2035525918
 Transform:
   m_ObjectHideFlags: 0
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 2048553954}
   - component: {fileID: 2048553956}
   m_Layer: 5
-  m_Name: Score Text
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2163,6 +2163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGameActive: 1
   scoreText: {fileID: 2048553954}
+  score: 0
 --- !u!1001 &2069998115
 PrefabInstance:
   m_ObjectHideFlags: 0

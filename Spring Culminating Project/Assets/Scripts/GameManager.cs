@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     
     public bool isGameActive = true;
     public TextMeshProUGUI scoreText;
-    private int score;
+    public int score;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +33,6 @@ public class GameManager : MonoBehaviour
     {
         updateScore();
         scoreText.text = "Score: " + score;
-    }
-    
-    private void OnCollisionEnter(Collision collision)
-    {
-        
     }
     
 }
